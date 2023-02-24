@@ -32,7 +32,7 @@ function loader(element) {
 
 async function addToPromptList(id) {
   const responseToSave = responses.find(response => response.id === id);
-  const response = await fetch(`http://localhost:3000/prompt/savePrompt`, {
+  const response = await fetch(`https://xylserver.onrender.com//prompt/savePrompt`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +45,7 @@ async function addToPromptList(id) {
 }
 
 (async function retrievePrompts() {
-  const response = await fetch(`http://localhost:3000/prompt/savedPrompts`, {
+  const response = await fetch(`https://xylserver.onrender.com//prompt/savedPrompts`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -60,7 +60,7 @@ async function addToPromptList(id) {
 })();
 
 // deleteAll.addEventListener("click", async () => {
-//   const response = await fetch(`http://localhost:3000/prompt/deleteAll`, {
+//   const response = await fetch(`https://xylserver.onrender.com//prompt/deleteAll`, {
 //     method: "POST",
 //     headers: {
 //       "Content-Type": "application/json",
@@ -134,7 +134,7 @@ const handleFormSubmit = async (e) => {
 
   loader(messageDiv);
 
-  const response = await fetch("http://localhost:3000/chatbot", {
+  const response = await fetch("https://xylserver.onrender.com//chatbot", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
