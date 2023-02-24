@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chatbot</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/chatbot.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    
+    <script type="module" crossorigin src="/assets/index-283913c5.js"></script>
+  </head>
+
+  <body>
+    <aside class="sidemenu">
+      <h2 class="promptHeader">Xylus</h2>
+      <p>Xylus is a code-completion AI which helps you write code with the natural language provided as a prompt. The code is generated in any language which is specified by the user. We hope it helps you!</p>
+      <div class="promtContainer"><ul id="promptList"></ul></div>
+      <div class="customizeContainer">
+      <div class="modelContainer">
+        <label class="modelform" for="model">Choose a Model:</label>
+        <select name="model" id="model"></select>
+      </div>
+        <div class="slideContainer">
+          <label>Choose a Temperature:</label>
+          <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.95"
+          class="slider"
+          id="temperature"
+          />
+          <p><span id="output"></span></p>
+        </div>
+        <div class="buttonContainer">
+          <button id="logout">Logout</button>
+          <button id="deleteAll">Delete Saved</button>
+        </div>
+      </div>
+    </aside>
+    <div id="Container">
+      <div id="overlay" class="">
+        <div id="overlayContent">
+          <h2><img src="../assets/examples.svg"/>Examples</h2>
+          <ul>
+            <li>"Explain quantum computing in simple terms"</li>
+            <li>"Got any creative ideas for a 10 year old’s birthday?"</li>
+            <li>"How do I make an HTTP request in Javascript?"</li>
+          </ul>
+          <h2><img src="../assets/capabilities.svg"/>Capabilities</h2>
+          <ul>
+            <li>Answer questions</li>
+            <li>Summarize text</li>
+            <li>Translate text</li>
+            <li>Generate creative writing</li>
+          </ul>
+          <h2><img src="../assets/limitations.svg"/>Limitations</h2>
+          <ul>
+            <li>May not always provide accurate information</li>
+            <li>Can struggle with context and sarcasm</li>
+            <li>Not capable of performing certain tasks (e.g. sending an email)</li>
+          </ul>
+          
+        </div>
+      </div>
+      <div id="chatContainer"></div>
+      <form class="chatform">
+        <textarea
+          name="prompt"
+          rows="1"
+          cols="1"
+          placeholder="Type your message here..."
+          spellcheck="false"
+        ></textarea>
+        <button type="submit" class="send">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+            ></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+    
+    
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en"></html>

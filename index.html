@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Xylus — Code-AI</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/chatbot.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    
+  </head>
+
+  <body>
+    <aside class="sidemenu" style="
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgb(255 255 255) 0%, rgb(42 42 42) 0%, rgba(0,0,0,1) 100%);
+">
+      <div id="overlayContent">
+        <h2><img src="../assets/capabilities.svg">Xylus — Code-AI</h2>
+        <ul>
+          <li>Xylus is an code-completion AI tool that suggests accurate code snippets and provides help based on user's text input, speeding up coding and reducing errors.</li>
+        </ul>
+      </div>
+      <div id="overlayContent">
+        <h2><img src="../assets/examples.svg">Examples &amp; Usage</h2>
+        <ul>
+          <li>Write a hello world program in C++</li>
+          <li>Create a website in HTML and CSS</li>
+          <li>Create an flask app to download songs</li>
+        </ul>
+      </div>
+      <div id="overlayContent">
+        <h2><img src="../assets/limitations.svg">Limitations &amp; Uses</h2>
+        <ul>
+          <li>May generate incorrect information.</li>
+          <li>Mostly use this to write code via NLP.</li>
+          <li>Code might contain exceptional errors.</li>
+        </ul>
+        
+      </div>
+      
+        <div class="buttonContainer">
+          <button id="instagram">Instagram</button>
+          <button id="twitter">Twitter</button>
+        </div>
+      </div>
+    </aside>
+    <div id="Container" style="
+    background: rgb(0,0,0);
+    background: linear-gradient(134deg, rgba(0,0,0,1) 0%, rgb(20 20 20) 100%, rgba(255,255,255,1) 100%);
+">
+      <div id="chatContainer"></div>
+      <form class="chatform" style="
+      background: linear-gradient(172deg, rgb(29 29 29) 0%, rgb(0 0 0) 100%);
+  ">
+        <textarea
+          name="prompt"
+          rows="1"
+          cols="1"
+          placeholder="Type your message here..."
+          spellcheck="false"
+        ></textarea>
+        <button type="submit" class="send">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+            ></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <script type="module" src="./js/sidemenu.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en"></html>

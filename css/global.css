@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+title {
+  width: 0 !important;
+}
+
+
+body {
+  background: #343541;
+}

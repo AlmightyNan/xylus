@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+#Container {
+  width: 80vw;
+  height: 100vh;
+  background: #343541;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: visible;
+}
+#promptList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-right: 0;
+
+  width: 100%;
+  color: White;
+  flex-direction: column;
+  overflow: scroll;
+}
+#overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #343541;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#overlayContent2 {
+  color: white;
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#updates-faq-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#overlayContent2 li {
+  width: 100%;
+  height: auto;
+  font-size: 1.1em;
+  padding: 10px;
+  margin-top: 15px;
+  display: flex;
+  background-color: #444654;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#overlayContent {
+  color: white;
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#capabilities, #limitations {
+  width: 40%;
+  text-align: left;
+  margin-bottom: 20px;
+  
+}
+#overlayContent h2 {
+  margin: 2;
+  padding: 0;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: 2;
+}
+#overlayContent ul{
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  color: White;
+  flex-direction: column;
+  overflow: scroll;
+}
+#overlayContent li {
+  background: rgb(29,29,29);
+  background: linear-gradient(172deg, rgb(11 11 11) 0%, rgb(0 0 0) 100%);
+  width: 100%;
+  height: auto;
+  font-size: 1.1em;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: larger;
+  display: flex;
+  background-color: #000000;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#overlayContent img {
+  display: block;
+  padding: 5px;
+  margin-right: 5px;
+  filter: invert(100%) sepia(7%) saturate(0%) hue-rotate(292deg) brightness(101%) contrast(110%);
+  width: 50px;
+  height: 41px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#promptList li {
+  margin-bottom: 5px;
+  padding: 15px;
+  text-overflow: ellipsis;
+  border-radius: 5px;
+  background-color: #444654;
+  height: auto;
+  width: 100%;
+}
+.promptHeader {
+  display: block;
+  font-size: 1.3em;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  
+}
+#promptList li:hover {
+  background-color: #444647;
+}
+.customizeContainer {
+  margin-top: auto;
+  bottom: 0;
+  flex-direction: column;
+}
+.buttonContainer {
+  
+  position: relative;
+  align-self: center;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  bottom: 0;
+}
+
+#twitter {
+  position: relative;
+  bottom: 0;
+  align-self: center;
+  justify-self: center;
+  font-size: medium;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: rgb(0 0 0);
+  rotate: 0deg;
+  background: linear-gradient(172deg, #313131 0%, rgb(0 0 0) 100%);
+  cursor: pointer;
+}
+
+.save {
+  rotate: 0deg;
+  color: white;
+}
+
+#instagram {
+  position: relative;
+  bottom: 0;
+  align-self: center;
+  justify-self: center;
+  font-size: medium;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: rgb(0 0 0);
+  rotate: 0deg;
+  background: linear-gradient(172deg, #313131 0%, rgb(0 0 0) 100%);
+  cursor: pointer;
+}
+
+.sidemenu {
+  width: 20vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modelform {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #202123;
+}
+select::after {
+  content: "";
+  justify-self: end;
+
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+}
+
+optgroup {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto 0;
+  padding: 0.5em 1em;
+  background-color: #202123;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #444654;
+}
+.promtContainer {
+  width: 100%;
+  height: 55vh;
+  overflow-y: auto;
+  background-color: #202123;
+  border-radius: 6px;
+  
+}
+
+.slideContainer {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  padding-bottom: 30px;
+  
+}
+.modelContainer {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  padding-bottom: 40px;
+}
+.modelContainer label {
+  padding: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 15px;
+}
+.slideContainer input {
+  margin-bottom: 10px;
+  
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #444654;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #444654;
+  cursor: pointer;
+}
+#chatContainer {
+  flex: 1;
+  width: 80%;
+  height: auto;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+.ai {
+  background: #444654;
+}
+
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai .profile {
+  background: #ffffff;
+}
+
+.profile img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.message {
+  flex: 1;
+  align-self: center;
+  color: #dcdcdc;
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  max-width: 100%;
+  white-space: pre-wrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chatform {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #40414f;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.chatform img {
+  justify-content: center;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  color: gray;
+  margin: 10px;
+}
+.send {
+  rotate: 90deg;
+}
+
+.chatform svg {
+  width: 25px;
+  color: #8e8ea0;
+  height: 25px;
+}
+
+.chatform svg:hover {
+  transform: scale(1.1);
+}
+.wrapper {
+  width: 100%;
+  padding: 15px;
+  background: rgb(29,29,29);
+  background: linear-gradient(144deg, rgb(23 23 23) 0%, rgb(36 36 36) 100%);
+  min-height: fit-content;
+}
+
+.chatgpt-codeblock {
+  background-color: #f7f7f7;
+  color: #333333;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
